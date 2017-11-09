@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE validators PUBLIC
+          "-//Apache Struts//XWork Validator 1.0.2//EN"
+          "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+  <field name="estabelecimento.codigo">
+    <field-validator type="requiredstring">
+	  <message >O campo é obrigatorio</message>
+	</field-validator>
+  </field>
+  
+  <field name="estabelecimento.descricao">
+    <field-validator type="requiredstring">
+	  <param name="maxLength">2</param>
+	  <message key="designation.obligatoire"/>
+	</field-validator>	
+  </field>
+</validators>

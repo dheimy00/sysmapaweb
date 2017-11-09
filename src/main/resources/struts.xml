@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+   <package name="default" namespace="/" extends="struts-default">
+     <default-action-ref name="estabelecimentos"></default-action-ref>  
+     <action name="estabelecimentos" class="br.com.sysmapaweb.action.EstabelecimentoAction" method="index">
+       <result name="success">views/estabelecimentos.jsp</result>
+     </action>
+     <action name="save" class="br.com.sysmapaweb.action.EstabelecimentoAction" method="save" >
+       <result name="success">views/estabelecimentos.jsp</result>
+       <result name="input">views/estabelecimentos.jsp</result>
+     </action>
+     <action name="delete" class="br.com.sysmapaweb.action.EstabelecimentoAction" method="delete" >
+       <result name="success">views/estabelecimentos.jsp</result>       
+     </action>
+     <action name="edit" class="br.com.sysmapaweb.action.EstabelecimentoAction" method="edit" >
+       <result name="success">views/estabelecimentos.jsp</result>    
+     </action>
+      
+   </package>
+</struts>
